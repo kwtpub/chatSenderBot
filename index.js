@@ -2,10 +2,10 @@ const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
 
-const token = '7818601616:AAEXkZi0rNL8IGxheghMq8UX9PCUPtyE858';
+const token = process.env.token;
 
 
-const channelId = -1002397816296;
+const channelId = process.env.channelId;
 
 
 const bot = new TelegramBot(token, { polling: true });
